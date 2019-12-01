@@ -75,12 +75,30 @@ func (c *Client) GetEDGARIndexEntries(start, end time.Time, f func(EDGARIndexEnt
 	for year := end.Year(); year >= start.Year(); year-- {
 		endQuarter := 4
 		if year == end.Year() {
-			endQuarter = (int(end.Month())-1)/4 + 1
+			switch end.Month() {
+			case 1, 2, 3:
+				endQuarter = 1
+			case 4, 5, 6:
+				endQuarter = 2
+			case 7, 8, 9:
+				endQuarter = 3
+			case 10, 11, 12:
+				endQuarter = 4
+			}
 		}
 
 		startQuarter := 1
 		if year == start.Year() {
-			startQuarter = (int(start.Month())-1)/4 + 1
+			switch start.Month() {
+			case 1, 2, 3:
+				startQuarter = 1
+			case 4, 5, 6:
+				startQuarter = 2
+			case 7, 8, 9:
+				startQuarter = 3
+			case 10, 11, 12:
+				startQuarter = 4
+			}
 		}
 
 		for quarter := endQuarter; quarter >= startQuarter; quarter-- {

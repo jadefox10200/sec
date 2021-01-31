@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tradyfinance/httpext"
-	"github.com/tradyfinance/marshaler"
+	"github.com/jadefox10200/httpext"
+	"github.com/jadefox10200/marshaler"
 )
 
 // See: https://www.sec.gov/Archives/edgar/data/1000045/0001357521-18-000008.txt
@@ -175,9 +175,9 @@ CONFORMED PERIOD OF REPORT:	20181015
 FILED AS OF DATE:		20181015
 DATE AS OF CHANGE:		20181015
 
-REPORTING-OWNER:	
+REPORTING-OWNER:
 
-	OWNER DATA:	
+	OWNER DATA:
 		COMPANY CONFORMED NAME:			MALSON KELLY M
 		CENTRAL INDEX KEY:			0001357521
 
@@ -187,20 +187,20 @@ REPORTING-OWNER:
 		SEC FILE NUMBER:	000-26680
 		FILM NUMBER:		181122886
 
-	MAIL ADDRESS:	
+	MAIL ADDRESS:
 		STREET 1:		2454 MCMULLEN BOOTH ROAD
 		STREET 2:		BUILDING C
 		CITY:			CLEARWATER
 		STATE:			FL
 		ZIP:			33759
 
-	FORMER NAME:	
+	FORMER NAME:
 		FORMER CONFORMED NAME:	Snape Kelly Malson
 		DATE OF NAME CHANGE:	20060327
 
-ISSUER:		
+ISSUER:
 
-	COMPANY DATA:	
+	COMPANY DATA:
 		COMPANY CONFORMED NAME:			NICHOLAS FINANCIAL INC
 		CENTRAL INDEX KEY:			0001000045
 		STANDARD INDUSTRIAL CLASSIFICATION:	SHORT-TERM BUSINESS CREDIT INSTITUTIONS [6153]
@@ -208,7 +208,7 @@ ISSUER:
 		STATE OF INCORPORATION:			FL
 		FISCAL YEAR END:			0331
 
-	BUSINESS ADDRESS:	
+	BUSINESS ADDRESS:
 		STREET 1:		2454 MCMULLEN BOOTH RD
 		STREET 2:		BLDG C SUITE 501 B
 		CITY:			CLEARWATER
@@ -216,7 +216,7 @@ ISSUER:
 		ZIP:			33759
 		BUSINESS PHONE:		7277260763
 
-	MAIL ADDRESS:	
+	MAIL ADDRESS:
 		STREET 1:		2454 MCMULLEN BOOTH RD
 		STREET 2:		BLDG C SUITE 501B
 		CITY:			CLEARWATER
@@ -377,8 +377,8 @@ var sampleForm4 = &Form4{
 	ReportingOwnerIsOfficer: true,
 	NonDerivativeTransactions: []Form4Transaction{
 		Form4Transaction{
-			SecurityTitle: "Common",
-			Date:          marshaler.Date(time.Date(2018, 10, 15, 0, 0, 0, 0, time.UTC)),
+			SecurityTitle:                   "Common",
+			Date:                            marshaler.Date(time.Date(2018, 10, 15, 0, 0, 0, 0, time.UTC)),
 			ConversionOrExercisePrice:       0.000000,
 			FormType:                        "4",
 			TransactionCode:                 "P",
@@ -389,8 +389,8 @@ var sampleForm4 = &Form4{
 			DirectOrIndirectOwnership:       "D",
 		},
 		Form4Transaction{
-			SecurityTitle: "Common",
-			Date:          marshaler.Date(time.Date(2018, 10, 15, 0, 0, 0, 0, time.UTC)),
+			SecurityTitle:                   "Common",
+			Date:                            marshaler.Date(time.Date(2018, 10, 15, 0, 0, 0, 0, time.UTC)),
 			ConversionOrExercisePrice:       0.000000,
 			FormType:                        "4",
 			TransactionCode:                 "A",

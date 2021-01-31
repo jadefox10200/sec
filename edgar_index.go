@@ -21,7 +21,7 @@ import (
 	"io"
 	"time"
 
-	"github.com/tradyfinance/httpext"
+	"github.com/jadefox10200/httpext"
 )
 
 // ParseEDGARIndex parses an EDGAR index read from r, calling f for each entry.

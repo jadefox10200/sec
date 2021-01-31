@@ -17,7 +17,7 @@ package sec
 import (
 	"net/http"
 
-	"github.com/tradyfinance/httpext"
+	"github.com/jadefox10200/httpext"
 )
 
 // A Client is an SEC client.  Its zero value (DefaultClient) is a usable client

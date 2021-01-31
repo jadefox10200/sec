@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tradyfinance/httpext"
+	"github.com/jadefox10200/httpext"
 )
 
 const sampleEDGARIndex = `
@@ -33,9 +33,9 @@ Comments:              webmaster@sec.gov
 Anonymous FTP:         ftp://ftp.sec.gov/edgar/
 Cloud HTTP:            https://www.sec.gov/Archives/
 
- 
- 
- 
+
+
+
 CIK|Company Name|Form Type|Date Filed|Filename
 --------------------------------------------------------------------------------
 1000045|NICHOLAS FINANCIAL INC|4|2018-10-15|edgar/data/1000045/0001357521-18-000008.txt

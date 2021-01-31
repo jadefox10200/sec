@@ -19,7 +19,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/tradyfinance/sec"
+	"github.com/jadefox10200/sec"
 )
 
 func ExampleGetEDGARIndexEntries() {

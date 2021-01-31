@@ -19,8 +19,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/tradyfinance/httpext"
-	"github.com/tradyfinance/marshaler"
+	"github.com/jadefox10200/httpext"
+	"github.com/jadefox10200/marshaler"
 )
 
 // A Form4 represents a SEC form 4 filing.

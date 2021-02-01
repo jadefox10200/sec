@@ -1,3 +1,7 @@
+Note: This code was originally writen by github.com/tradyfinance.
+However, it was taken down and so I changed it over to my own repo
+for dependancy purposes. 
+
 # SEC
 
 SEC is a library for accessing SEC filings.
